@@ -40,7 +40,7 @@ def _unenc():
 def _help():
     screenClear()
     print( '''
-    
+
     [*] This program works to encrypt and decrypt texts
         but the decryption key must be available
 
@@ -59,7 +59,7 @@ def _help():
 
 screenClear()
 def _lbl():
-    _ = system
+    screenClear()
     label = '''
     |=================================================================|
     |                                                                 |
