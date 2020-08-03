@@ -19,7 +19,7 @@ def _enc():
     encMsg =[]
     enctxt = ''
     for i in msgList:
-        encMsg.append(ord(i)-int(_key))
+        encMsg.append(ord(i)+int(_key)-4)
     for t in encMsg:
         enctxt += (f'{chr(int(t))}')
     return enctxt
@@ -32,7 +32,7 @@ def _unenc():
     encMsg =[]
     txt = ''
     for i in msgList:
-        encMsg.append(ord(i)+int(_key))
+        encMsg.append(ord(i)-int(_key)+4)
     for t in encMsg:
         txt += (f'{chr(int(t))}')
     return txt
